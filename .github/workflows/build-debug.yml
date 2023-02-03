@@ -30,8 +30,8 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           arguments: assembleDebug
-          gradle-executable
-          gradle-home-cache-cleanup
+                     gradle-executable
+                     gradle-home-cache-cleanup
         env:
           CRASH_REPORT_WEBHOOK_URL: ${{ secrets.CRASH_REPORT_WEBHOOK_URL }}
 
